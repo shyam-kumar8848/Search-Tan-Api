@@ -1,40 +1,52 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2022-11-23 12:47:16.573310",
+ "creation": "2022-11-22 19:28:24.382290",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "sandbox_auth_url",
   "x_api_key",
   "x_api_secret",
-  "sandbox_app_url"
+  "x_api_version",
+  "mapping_url"
  ],
  "fields": [
   {
-   "fieldname": "sandbox_app_url",
+   "fieldname": "sandbox_auth_url",
    "fieldtype": "Data",
-   "label": "Sandbox App Url"
+   "label": "Sandbox Auth Url "
   },
   {
    "fieldname": "x_api_key",
    "fieldtype": "Data",
-   "label": "Api Key"
+   "label": "X Api Key"
   },
   {
    "fieldname": "x_api_secret",
    "fieldtype": "Data",
-   "label": "Api Secret"
+   "label": "X Api Secret"
+  },
+  {
+   "fieldname": "x_api_version",
+   "fieldtype": "Data",
+   "label": "X Api Version"
+  },
+  {
+   "fieldname": "mapping_url",
+   "fieldtype": "Data",
+   "label": "Mapping Url"
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2022-11-23 12:51:23.760227",
+ "modified": "2022-11-22 19:28:24.382290",
  "modified_by": "Administrator",
  "module": "setting",
- "name": "Setting",
+ "name": "Sandbox Setting",
  "owner": "Administrator",
  "permissions": [
   {
