@@ -28,10 +28,10 @@ frappe.ui.form.on('Employee', {
                             frm.set_value('pan_and_aadhar_mapping_status',"Enter PAN Card Details.")
                         }
                     }
+                    //console.log(r.message['data'])
+                    alert(r.message['status']);
+                    //frappe.msgprint("Details stored Successfully!")
                 }
-                // console.log(r.message['status'])
-                alert(r.message['status']);
-                // //frappe.msgprint("Details stored Successfully!")
             }
         });
     })
@@ -40,29 +40,6 @@ frappe.ui.form.on('Employee', {
 
 
 
-// frappe.ui.form.on('Supplier', {
-//     refresh: function(frm) {
-//         frm.add_custom_button(('206AB/CCA Check'), function(){
-//             frappe.call({
-//                 method: "settings.settings.API.tds_tax_act_api.tds_tax_act",
-//                 args: {
-//                     'pan': frm.doc.pan,
-//                     'supplier_name': frm.doc.supplier_name
-//                 },
-//                 callback: function (r) {
-//                     if (r){
-//                         console.log(r.[''])
-//                         alert(r['message']['data']);
-//                         //frappe.msgprint("Details stored Successfully!")
-//                     }
-//                     else {
-//                         frappe.throw(r.message.error)
-//                     }
-//                 }
-//             });
-//         });
-//     }
-// });
 
 
 

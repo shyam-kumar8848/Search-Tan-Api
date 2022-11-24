@@ -11,8 +11,8 @@ def get_employee_details(**kwargs):
         pan = kwargs.get('pan')
         adhar = kwargs.get('adhar')
         setting = frappe.get_doc('Setting')
+
         url = setting.sandbox_app_url
-        
         url += "/api/method/sandbox.API.employee_details_api.get_employee_details"
         payload={
             'pan': pan,
