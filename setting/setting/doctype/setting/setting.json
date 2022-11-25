@@ -9,7 +9,10 @@
  "field_order": [
   "x_api_key",
   "x_api_secret",
-  "sandbox_app_url"
+  "sandbox_app_url",
+  "section_break_4",
+  "api_tab",
+  "pan_and_aadhar_mapping_status"
  ],
  "fields": [
   {
@@ -26,12 +29,27 @@
    "fieldname": "x_api_secret",
    "fieldtype": "Data",
    "label": "Api Secret"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "pan_and_aadhar_mapping_status",
+   "fieldtype": "Check",
+   "label": "PAN AND Aadhar Mapping Status"
+  },
+  {
+   "fieldname": "api_tab",
+   "fieldtype": "Tab Break",
+   "label": "API"
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2022-11-23 12:51:23.760227",
+ "modified": "2022-11-25 10:58:05.475851",
  "modified_by": "Administrator",
  "module": "setting",
  "name": "Setting",
