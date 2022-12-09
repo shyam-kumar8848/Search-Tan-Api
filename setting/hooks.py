@@ -1,5 +1,3 @@
-from . import __version__ as app_version
-
 app_name = "setting"
 app_title = "setting"
 app_publisher = "setting"
@@ -31,7 +29,16 @@ app_license = "MIT"
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
 
-doctype_js = {"Employee":"public/js/setting.js"}
+# doctype_js = {"Employee":"public/js/setting.js"}
+# doctype_js = {"Bank Account":"public/js/bank_account.js"}
+# doctype_js = {"Supplier":"public/js/supplier.js"}
+
+
+doctype_js = {
+    "Employee" : "public/js/setting.js",
+    "Supplier" : "public/js/supplier.js",
+    "Bank Account" : "public/js/bank_account.js"
+    }
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -187,3 +194,36 @@ doctype_js = {"Employee":"public/js/setting.js"}
 # auth_hooks = [
 #	"setting.auth.validate"
 # ]
+
+
+fixtures = [
+    {"dt": "Custom Field", "filters": [
+		[
+			"name", "in", [
+				"Employee-pan_card_no",
+				"Employee-aadhaar_card_no",
+                "Employee-pan_and_aadhar_mapping_status"
+				
+				
+			]
+		]
+	]}
+]
+
+fixtures = [
+	 {"dt": "Custom Field", "filters": [
+		[
+			"name", "in", [
+				"Bank Account-ifsc",
+				"Bank Account-ifsc_detail",
+                "Bank Account-ifsc_verfication",
+				"Bank Account-fetch_information",
+				"Bank Account-column_break_21",
+			]
+		]
+	]}
+]
+
+
+
+

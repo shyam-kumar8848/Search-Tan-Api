@@ -1,6 +1,5 @@
 frappe.ui.form.on('Employee', {
     refresh: function (frm) {
-        
         frappe.model.with_doc("Setting", frm.doc.trigger, function () {
             var emp = frappe.model.get_doc("Setting")
             if (emp.pan_and_aadhar_mapping_status == 1) {
